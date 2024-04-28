@@ -290,7 +290,7 @@ RC DiskBufferPool::remove_file(const char *table_name)
 {
   RC rc = RC::SUCCESS;
   rc    = close_file();
-  if(rc != RC::SUCCESS)
+  if (rc != RC::SUCCESS)
     return rc;
   return rc;
 }
