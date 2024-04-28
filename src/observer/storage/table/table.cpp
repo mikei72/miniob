@@ -125,7 +125,7 @@ RC Table::create(int32_t table_id, const char *path, const char *name, const cha
 }
 
 RC Table::drop(const char *table_name)
-[
+{
   RC rc = RC::SUCCESS;
   PersistHandler persistHandler;
 
@@ -156,7 +156,7 @@ RC Table::drop(const char *table_name)
   record_handler_->close();
 
   return rc; 
-]
+}
 
 RC Table::open(const char *meta_file, const char *base_dir)
 {
